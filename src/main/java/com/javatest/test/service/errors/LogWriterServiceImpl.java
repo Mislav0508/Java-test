@@ -13,7 +13,7 @@ import java.util.Date;
 @Service
 public class LogWriterServiceImpl implements LogWriterService {
 
-	private static final String PATH_TO_LOG = "C:\\Users\\misla\\Desktop\\java-test-errors\\errors.txt";
+	private static final String PATH_TO_LOG = "C:\\insert_your_path\\errors.txt";
 
 	@Override
 	public void writeException(Exception ex) {
