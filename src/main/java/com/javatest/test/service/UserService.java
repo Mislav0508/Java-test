@@ -1,9 +1,9 @@
 package com.javatest.test.service;
 
-import com.javatest.test.viewmodel.exceptions.ResourceNotFoundException;
 import com.javatest.test.model.User;
 import com.javatest.test.repository.UserRepository;
 import com.javatest.test.viewmodel.UserSaveViewModel;
+import com.javatest.test.viewmodel.exceptions.ResourceNotFoundException;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
