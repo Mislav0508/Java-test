@@ -25,7 +25,7 @@ These instructions will get your copy of the project up and running on your loca
    ```bash
    git clone git@github.com:Mislav0508/Java-test.git
 
-2. **Install MySQL. Ensure that MySQL is installed on your machine. If not, download it from https://dev.mysql.com/downloads/mysql/ and follow the installation instructions**
+2. **Install MySQL. Ensure that MySQL is installed on your machine. If not, download it from [MySQL](https://dev.mysql.com/downloads/mysql/) and follow the installation instructions**
 
 - Windows: Use the MySQL installer and follow the wizard.
 - Mac: You can use Homebrew by running brew install mysql.
