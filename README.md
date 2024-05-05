@@ -105,3 +105,9 @@ These instructions will get your copy of the project up and running on your loca
 
   private static final String PATH_TO_LOG = "C:\\Users\\user\\Desktop\\java-test-errors\\errors.txt";
 
+- **Using Docker**: 
+
+  After cloning the project locally, go to the root of the project
+  and run:
+  docker-compose up
+  * make sure port 3306 is available before running the project.
