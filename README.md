@@ -94,3 +94,14 @@ These instructions will get your copy of the project up and running on your loca
 
     IntelliJ IDEA/Eclipse: You can also right-click on the project or the src/test/java directory 
     and select Run All Tests to execute all tests in the project.
+
+### Additional Notes:
+
+- **Logging**: 
+
+    Additional logging to the filesystem can be enabled by specifying the path in LogWriterServiceImpl.
+    
+    Example: 
+
+  private static final String PATH_TO_LOG = "C:\\Users\\user\\Desktop\\java-test-errors\\errors.txt";
+
