@@ -12,12 +12,12 @@ import java.util.stream.Collectors;
 @Service
 public class ErrorHandlerService {
 
-   public static ApiResponse constructErrorResponse(BindingResult bindingResult) {
+   public static ApiResponse constructErrorResponse(BindingResult bindingResult, HttpStatus httpStatus) {
       List<String> errorMessages = bindingResult.getAllErrors()
                      .stream()
                      .map(ObjectError -> ObjectError.getDefaultMessage())
                      .collect(Collectors.toList());
-      return new ApiResponse<>(new Meta(false, System.currentTimeMillis()), null, errorMessages, HttpStatus.INTERNAL_SERVER_ERROR.value());
+      return new ApiResponse<>(new Meta(false, System.currentTimeMillis()), null, errorMessages, httpStatus.value());
    }
 
 }

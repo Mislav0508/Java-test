@@ -1,6 +1,6 @@
 package com.javatest.test.service.errors;
 
-import com.javatest.test.exceptions.ResourceNotFoundException;
+import com.javatest.test.viewmodel.exceptions.ResourceNotFoundException;
 import com.javatest.test.viewmodel.response.ApiResponse;
 import com.javatest.test.viewmodel.response.Meta;
 import org.springframework.beans.factory.annotation.Autowired;

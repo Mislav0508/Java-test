@@ -1,4 +1,4 @@
-package com.javatest.test.exceptions;
+package com.javatest.test.viewmodel.exceptions;
 
 public class ResourceNotFoundException extends RuntimeException {
    public ResourceNotFoundException(String message) {

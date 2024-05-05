@@ -1,6 +1,6 @@
 package com.javatest.test.service;
 
-import com.javatest.test.exceptions.ResourceNotFoundException;
+import com.javatest.test.viewmodel.exceptions.ResourceNotFoundException;
 import com.javatest.test.model.User;
 import com.javatest.test.repository.UserRepository;
 import com.javatest.test.viewmodel.UserSaveViewModel;
@@ -25,8 +25,6 @@ public class UserService {
       User user = new User(viewModel);
       return userRepository.save(user);
    }
-
-
 
    @Transactional
    public User update(@Valid UserSaveViewModel viewModel) {

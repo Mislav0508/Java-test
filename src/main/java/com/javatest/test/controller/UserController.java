@@ -32,7 +32,7 @@ public class UserController {
    @PostMapping
    public ApiResponse<UserSaveViewModel> createUser(@Valid @RequestBody UserSaveViewModel viewModel, BindingResult bindingResult) {
       if (bindingResult.hasErrors()) {
-         return ErrorHandlerService.constructErrorResponse(bindingResult);
+         return ErrorHandlerService.constructErrorResponse(bindingResult, HttpStatus.BAD_REQUEST);
       }
 
       User user = userService.create(viewModel);
@@ -42,7 +42,7 @@ public class UserController {
    @PutMapping
    public ApiResponse<UserSaveViewModel> updateUser(@Valid @RequestBody UserSaveViewModel viewModel, BindingResult bindingResult) {
       if (bindingResult.hasErrors()) {
-         return ErrorHandlerService.constructErrorResponse(bindingResult);
+         return ErrorHandlerService.constructErrorResponse(bindingResult, HttpStatus.BAD_REQUEST);
       }
 
       User user = userService.update(viewModel);
